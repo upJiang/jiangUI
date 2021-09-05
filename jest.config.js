@@ -1,0 +1,14 @@
+module.exports = {
+  testEnvironment: "jsdom", // 默认JSdom
+  roots: ["<rootDir>/packages"], //
+  transform: {
+    "^.+\\.vue$": "vue-jest", // vue单⽂件
+    "^.+\\js$": "babel-jest", // esm最新语法 import
+  },
+  moduleFileExtensions: ["vue", "js", "json", "jsx", "ts", "tsx", "node"],
+  testMatch: ["**/__tests__/**/*.spec.js"],
+  // 别名
+  moduleNameMapper: {
+    "^jiang-ui(.*)$": "<rootDir>$1",
+  },
+};

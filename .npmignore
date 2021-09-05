@@ -1,0 +1,15 @@
+packages/
+node_modules/
+scripts/
+.babelrc
+.eslintignore
+.eslintrc.js
+.gitignore
+.npmignore
+.prettierrc.js
+jest.config.js
+rollup.config.js
+yarn.lock
+test.html
+docs/
+play/

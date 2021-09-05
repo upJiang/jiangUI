@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client"],
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      // 路径映射，相对于baseUrl
+      "@/*": ["src/*"],
+    }
+  },
+  "include": ["./shims.d.ts", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
