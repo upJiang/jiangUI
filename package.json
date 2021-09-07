@@ -24,7 +24,7 @@
     "pub": "sh ./scripts/publish.sh",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .vue --ext .js --ext .jsx packages/**/ src/**/ --fix",
     "prepare": "husky install",
-    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "dependencies": {
     "vue": "3.1.4"
