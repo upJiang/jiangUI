@@ -1,5 +1,5 @@
 Arguments: 
-  E:\weChat\node.js\node.exe E:\weChat\node.js\node_global\node_modules\yarn\bin\yarn.js add husky@7.0.0 -D
+  E:\weChat\node.js\node.exe E:\weChat\node.js\node_global\node_modules\yarn\bin\yarn.js
 
 PATH: 
   C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java;E:\weChat\node.js\node_global;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\weChat\node.js\;E:\Git\cmd;E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\jiang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Bandizip\;C:\Users\jiang\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiang\AppData\Roaming\npm
@@ -14,8 +14,12 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: read ECONNRESET
-      at TLSWrap.onStreamRead (internal/stream_base_commons.js:209:20)
+  SyntaxError: E:\vitePress\jiangUI\package.json: Unexpected token } in JSON at position 2280
+      at JSON.parse (<anonymous>)
+      at E:\weChat\node.js\node_global\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (E:\weChat\node.js\node_global\node_modules\yarn\lib\cli.js:310:30)
+      at E:\weChat\node.js\node_global\node_modules\yarn\lib\cli.js:321:13
 
 npm manifest: 
   {
@@ -77,6 +81,7 @@ npm manifest:
       "gulp-autoprefixer": "^7.0.1",
       "gulp-cssmin": "^0.2.0",
       "gulp-sass": "^4.1.0",
+      "husky": "7.0.0",
       "jest": "^27.1.0",
       "prettier": "^2.3.2",
       "rollup": "^2.56.3",
@@ -88,7 +93,8 @@ npm manifest:
       "tslib": "^2.3.1",
       "typescript": "^4.4.2",
       "vue-jest": "5.0.0-alpha.5",
-      "husky": "^7.0.0"
+      "@commitlint/cli": "^12.1.4",
+      "@commitlint/config-conventional": "^12.1.4",
     },
     "husky": {
       "hooks": {
@@ -4425,6 +4431,11 @@ Lockfile:
     version "2.1.0"
     resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
     integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
+  
+  husky@7.0.0:
+    version "7.0.0"
+    resolved "https://registry.nlark.com/husky/download/husky-7.0.0.tgz?cache=0&sync_timestamp=1629854757720&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhusky%2Fdownload%2Fhusky-7.0.0.tgz#3dbd5d28e76234689ee29bb41e048f28e3e46616"
+    integrity sha1-Pb1dKOdiNGie4pu0HgSPKOPkZhY=
   
   iconv-lite@0.4.24:
     version "0.4.24"
