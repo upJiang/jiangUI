@@ -1,20 +1,36 @@
 <template>
   <div class="main-container">
-    <button class="button-container">jiang Button</button>
+    <button class="button-container" @click="clickBack">{{ text }}</button>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const emit = defineEmits(['submitCallback'])
+
+const props = defineProps({
+  text: { type: String, default: '提交' },
+})
+
+const clickBack = () => {
+  console.log('点击提交')
+  emit('submitCallback')
+}
+</script>
 
 <style lang="scss" scoped>
 .main-container {
-  padding: 40px 50px;
-  background: red;
   .button-container {
-    border: blue solid 1px;
-    background: #888;
+    padding: 8px 15px;
+
+    background-color: #36c96d;
+    border-width: 0px;
+    border-radius: 2px;
+    box-shadow: none;
+
     font-size: 14px;
-    padding: 10px 20px;
+    color: #fff;
+
+    cursor: pointer;
   }
 }
 </style>

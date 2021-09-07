@@ -1,6 +1,9 @@
 packages/
 node_modules/
 scripts/
+docs/
+play/
+scripts/
 .babelrc
 .eslintignore
 .eslintrc.js
@@ -11,5 +14,6 @@ jest.config.js
 rollup.config.js
 yarn.lock
 test.html
-docs/
-play/
+gulpfile.js
+README.md
+

@@ -156,7 +156,6 @@ const globalProdConfig = {
 //   globalProdConfig
 // ]
 
-// 打包一个即可
 const formatConfigs = [
   esBrowserProdConfig
 ]

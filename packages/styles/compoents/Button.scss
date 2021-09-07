@@ -1,10 +1,15 @@
 .main-container {
-  padding: 40px 50px;
-  background: red;
   .button-container {
-    border: blue solid 1px;
-    background: #888;
+    padding: 8px 15px;
+
+    background-color: #36c96d;
+    border-width: 0px;
+    border-radius: 2px;
+    box-shadow: none;
+
     font-size: 14px;
-    padding: 10px 20px;
+    color: #fff;
+
+    cursor: pointer;
   }
 }
