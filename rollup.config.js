@@ -157,6 +157,7 @@ const globalProdConfig = {
 // ]
 
 const formatConfigs = [
+  globalConfig,
   esBrowserProdConfig
 ]
 function createPackageConfigs() {
